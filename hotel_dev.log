@@ -1,0 +1,1158 @@
+2025-02-25T20:50:40.009-03:00  INFO 8008 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Starting HotelApplication using Java 17.0.12 with PID 8008 (C:\Users\josev\OneDrive\Documentos\Informatica\Aulas\JAVA\Spring\hotel\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Informatica\Aulas\JAVA\Spring\hotel)
+2025-02-25T20:50:40.021-03:00  INFO 8008 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : The following 1 profile is active: "dev"
+2025-02-25T20:50:40.335-03:00  INFO 8008 --- [hotel] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25T20:50:40.337-03:00  INFO 8008 --- [hotel] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25T20:50:44.196-03:00  INFO 8008 --- [hotel] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25T20:50:44.305-03:00  INFO 8008 --- [hotel] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 0 JPA repository interfaces.
+2025-02-25T20:50:47.585-03:00  INFO 8008 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-25T20:50:47.650-03:00  INFO 8008 --- [hotel] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T20:50:47.652-03:00  INFO 8008 --- [hotel] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T20:50:47.975-03:00  INFO 8008 --- [hotel] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T20:50:47.981-03:00  INFO 8008 --- [hotel] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7637 ms
+2025-02-25T20:50:49.175-03:00  INFO 8008 --- [hotel] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T20:50:49.525-03:00  INFO 8008 --- [hotel] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T20:50:49.750-03:00  INFO 8008 --- [hotel] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T20:50:50.304-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@3d32472b
+2025-02-25T20:50:50.310-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@3d32472b
+2025-02-25T20:50:50.317-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@3d32472b
+2025-02-25T20:50:50.319-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@a9570b7
+2025-02-25T20:50:50.323-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@a9570b7
+2025-02-25T20:50:50.326-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@4f922d52
+2025-02-25T20:50:50.336-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@4f922d52
+2025-02-25T20:50:50.339-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@2f6fa788
+2025-02-25T20:50:50.343-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@2f6fa788
+2025-02-25T20:50:50.349-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@cba651
+2025-02-25T20:50:50.352-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@cba651
+2025-02-25T20:50:50.358-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@cba651
+2025-02-25T20:50:50.364-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@217a7e37
+2025-02-25T20:50:50.366-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@217a7e37
+2025-02-25T20:50:50.368-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@217a7e37
+2025-02-25T20:50:50.370-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@70f956b7
+2025-02-25T20:50:50.374-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@70f956b7
+2025-02-25T20:50:50.381-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@2001559
+2025-02-25T20:50:50.387-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@1cbd2179
+2025-02-25T20:50:50.389-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@1cbd2179
+2025-02-25T20:50:50.393-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@5d02c011
+2025-02-25T20:50:50.396-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@67f479e8
+2025-02-25T20:50:50.398-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@655c0292
+2025-02-25T20:50:50.404-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@655c0292
+2025-02-25T20:50:50.406-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@655c0292
+2025-02-25T20:50:50.411-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@101f51a9
+2025-02-25T20:50:50.415-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@101f51a9
+2025-02-25T20:50:50.419-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@101f51a9
+2025-02-25T20:50:50.428-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@5bd609f3
+2025-02-25T20:50:50.434-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@5bd609f3
+2025-02-25T20:50:50.435-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@5bd609f3
+2025-02-25T20:50:50.438-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@1f290058
+2025-02-25T20:50:50.444-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@1f290058
+2025-02-25T20:50:50.446-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@1f290058
+2025-02-25T20:50:50.447-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@1ae4c9bd
+2025-02-25T20:50:50.450-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@1ae4c9bd
+2025-02-25T20:50:50.452-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@1ae4c9bd
+2025-02-25T20:50:50.453-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@701c4151
+2025-02-25T20:50:50.459-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@701c4151
+2025-02-25T20:50:50.460-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@1b6e4730
+2025-02-25T20:50:50.461-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@1b6e4730
+2025-02-25T20:50:50.462-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@4c92bfc5
+2025-02-25T20:50:50.466-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@4c92bfc5
+2025-02-25T20:50:50.467-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@4c92bfc5
+2025-02-25T20:50:50.471-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@70073ecb
+2025-02-25T20:50:50.474-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@6283ef53
+2025-02-25T20:50:50.476-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@6283ef53
+2025-02-25T20:50:50.477-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@b3d63f4
+2025-02-25T20:50:50.479-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@528899c1
+2025-02-25T20:50:50.480-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@528899c1
+2025-02-25T20:50:50.485-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@528899c1
+2025-02-25T20:50:50.486-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1b30143d
+2025-02-25T20:50:50.488-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@6634897f
+2025-02-25T20:50:50.489-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@6f6648e
+2025-02-25T20:50:50.489-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@1026a300
+2025-02-25T20:50:50.490-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@1026a300
+2025-02-25T20:50:50.492-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@bacccc5
+2025-02-25T20:50:50.492-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@bacccc5
+2025-02-25T20:50:50.493-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@4911c3be
+2025-02-25T20:50:50.494-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@7cf61c06
+2025-02-25T20:50:50.497-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@59ed9e3b
+2025-02-25T20:50:50.499-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@344aab27
+2025-02-25T20:50:50.500-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@73018223
+2025-02-25T20:50:50.501-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@3f5ba669
+2025-02-25T20:50:50.503-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@af2ebff
+2025-02-25T20:50:50.504-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@af2ebff
+2025-02-25T20:50:50.505-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@6b006a15
+2025-02-25T20:50:50.509-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@6b006a15
+2025-02-25T20:50:50.510-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@14effdcc
+2025-02-25T20:50:50.518-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@14effdcc
+2025-02-25T20:50:50.563-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@76e579d6
+2025-02-25T20:50:50.635-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@76e579d6
+2025-02-25T20:50:50.638-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@6bd5c9e6
+2025-02-25T20:50:50.639-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@6bd5c9e6
+2025-02-25T20:50:50.642-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@36d464b
+2025-02-25T20:50:50.643-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6807da77
+2025-02-25T20:50:50.644-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@35713568
+2025-02-25T20:50:50.645-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@35713568
+2025-02-25T20:50:50.646-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@70ae50d9
+2025-02-25T20:50:50.649-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@19981f99
+2025-02-25T20:50:50.650-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4f1aaabf
+2025-02-25T20:50:50.651-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@737c0c41
+2025-02-25T20:50:50.652-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@737c0c41
+2025-02-25T20:50:50.654-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7156a26f
+2025-02-25T20:50:50.655-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@28eb0f0b
+2025-02-25T20:50:50.659-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@323e17fb
+2025-02-25T20:50:50.661-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@323e17fb
+2025-02-25T20:50:50.662-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@21331bf9
+2025-02-25T20:50:50.663-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@21331bf9
+2025-02-25T20:50:50.666-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@6532906a
+2025-02-25T20:50:50.667-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@6532906a
+2025-02-25T20:50:50.669-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@6532906a
+2025-02-25T20:50:50.670-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@15d14890
+2025-02-25T20:50:50.671-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@15d14890
+2025-02-25T20:50:50.672-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@15d14890
+2025-02-25T20:50:50.676-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@5712141e
+2025-02-25T20:50:50.677-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@6ec731d6
+2025-02-25T20:50:50.678-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@1f075da4
+2025-02-25T20:50:50.680-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@1f075da4
+2025-02-25T20:50:50.681-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@8d131c
+2025-02-25T20:50:50.682-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@8d131c
+2025-02-25T20:50:50.683-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@8d131c
+2025-02-25T20:50:50.684-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@477855f7
+2025-02-25T20:50:50.684-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@10e6854f
+2025-02-25T20:50:50.685-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@35a9108a
+2025-02-25T20:50:50.686-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@35a9108a
+2025-02-25T20:50:50.686-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@5d54e0d0
+2025-02-25T20:50:50.687-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@5d54e0d0
+2025-02-25T20:50:50.687-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@5d54e0d0
+2025-02-25T20:50:50.687-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@5886d160
+2025-02-25T20:50:50.688-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@5886d160
+2025-02-25T20:50:50.689-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@7c6eebc2
+2025-02-25T20:50:50.692-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@7c6eebc2
+2025-02-25T20:50:50.693-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@1be8985
+2025-02-25T20:50:50.694-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@1be8985
+2025-02-25T20:50:50.697-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@7b16ab02
+2025-02-25T20:50:50.698-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@7b16ab02
+2025-02-25T20:50:50.699-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@157578d1
+2025-02-25T20:50:50.705-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@157578d1
+2025-02-25T20:50:50.707-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@1e4eb146
+2025-02-25T20:50:50.708-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@6bc9e1ab
+2025-02-25T20:50:50.709-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@2549196b
+2025-02-25T20:50:50.710-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@1b444ee3
+2025-02-25T20:50:50.711-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@70eb084c
+2025-02-25T20:50:50.755-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@7d945b00
+2025-02-25T20:50:50.762-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@7d945b00
+2025-02-25T20:50:50.781-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@79b5ea55
+2025-02-25T20:50:50.782-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@642fb40b
+2025-02-25T20:50:50.787-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@217d4c9b
+2025-02-25T20:50:50.788-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@2440e79b
+2025-02-25T20:50:50.790-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@72714604
+2025-02-25T20:50:50.793-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@6b673bad
+2025-02-25T20:50:50.797-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@20b5bbce
+2025-02-25T20:50:50.800-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@3eaec7c
+2025-02-25T20:50:50.802-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@7bd3db63
+2025-02-25T20:50:52.169-03:00  INFO 8008 --- [hotel] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25T20:50:52.328-03:00  INFO 8008 --- [hotel] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T20:50:52.877-03:00  INFO 8008 --- [hotel] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64817486
+2025-02-25T20:50:52.884-03:00  INFO 8008 --- [hotel] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T20:50:53.126-03:00  WARN 8008 --- [hotel] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 9.1.2 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2025-02-25T20:50:53.256-03:00  INFO 8008 --- [hotel] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.1.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T20:50:53.300-03:00 DEBUG 8008 --- [hotel] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@5a78d0d3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@780256d7)
+2025-02-25T20:50:53.302-03:00 DEBUG 8008 --- [hotel] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1425da10) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1095c9f)
+2025-02-25T20:50:53.315-03:00 DEBUG 8008 --- [hotel] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-02-25T20:50:53.316-03:00 DEBUG 8008 --- [hotel] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-02-25T20:50:53.364-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@332cf9aa
+2025-02-25T20:50:53.364-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@332cf9aa
+2025-02-25T20:50:53.365-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@7d945b00`
+2025-02-25T20:50:53.398-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-02-25T20:50:53.399-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-02-25T20:50:53.400-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-02-25T20:50:53.416-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T20:50:53.417-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T20:50:53.418-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T20:50:53.418-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T20:50:53.419-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T20:50:53.419-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T20:50:53.423-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T20:50:53.424-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T20:50:53.426-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T20:50:53.431-03:00 DEBUG 8008 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2706487a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@58aab9cf]
+2025-02-25T20:50:57.421-03:00  INFO 8008 --- [hotel] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T20:50:57.424-03:00 DEBUG 8008 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2706487a] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@4a89510]
+2025-02-25T20:50:57.490-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+2025-02-25T20:50:57.495-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists quarto cascade
+2025-02-25T20:50:57.500-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists reserva cascade
+2025-02-25T20:50:57.503-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_quarto
+2025-02-25T20:50:57.505-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_reserva
+2025-02-25T20:50:57.526-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_quarto start with 1 increment by 50
+2025-02-25T20:50:57.567-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_reserva start with 1 increment by 50
+2025-02-25T20:50:57.584-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create table quarto (
+        capacidade_maxima integer not null,
+        id_quarto integer not null,
+        andar varchar(255) not null,
+        bloco varchar(255) not null,
+        quantidade_comodos varchar(255) not null,
+        primary key (id_quarto)
+    )
+2025-02-25T20:50:57.628-03:00 DEBUG 8008 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create table reserva (
+        custo_diaria numeric(18,3),
+        data_entrada date,
+        data_saida date,
+        parcelas integer not null,
+        quantidade_pessoas integer not null,
+        status_pagamento smallint check (status_pagamento between 0 and 2),
+        id_reserva bigint not null,
+        primary key (id_reserva)
+    )
+2025-02-25T20:50:57.682-03:00 TRACE 8008 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4a89510] for TypeConfiguration
+2025-02-25T20:50:57.685-03:00  INFO 8008 --- [hotel] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T20:50:58.012-03:00  WARN 8008 --- [hotel] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T20:50:59.316-03:00  INFO 8008 --- [hotel] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5433/hoteldb'
+2025-02-25T20:50:59.574-03:00  INFO 8008 --- [hotel] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-25T20:50:59.713-03:00  INFO 8008 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-25T20:50:59.756-03:00  INFO 8008 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Started HotelApplication in 22.128 seconds (process running for 24.25)
+2025-02-25T20:51:20.097-03:00  INFO 8008 --- [hotel] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25T20:51:20.769-03:00  INFO 8008 --- [hotel] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-25T20:51:20.781-03:00  INFO 8008 --- [hotel] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T20:51:20.784-03:00 TRACE 8008 --- [hotel] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@4a89510] for TypeConfiguration
+2025-02-25T20:51:20.785-03:00 DEBUG 8008 --- [hotel] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3b1df4c7] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4a89510]
+2025-02-25T20:51:20.795-03:00  INFO 8008 --- [hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T20:51:20.812-03:00  INFO 8008 --- [hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T21:32:31.816-03:00  INFO 7472 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Starting HotelApplication using Java 17.0.12 with PID 7472 (C:\Users\josev\OneDrive\Documentos\Informatica\Aulas\JAVA\Spring\hotel\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Informatica\Aulas\JAVA\Spring\hotel)
+2025-02-25T21:32:31.827-03:00  INFO 7472 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : The following 1 profile is active: "dev"
+2025-02-25T21:32:32.113-03:00  INFO 7472 --- [hotel] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25T21:32:32.114-03:00  INFO 7472 --- [hotel] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25T21:32:34.888-03:00  INFO 7472 --- [hotel] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25T21:32:35.202-03:00  INFO 7472 --- [hotel] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260 ms. Found 2 JPA repository interfaces.
+2025-02-25T21:32:39.450-03:00  INFO 7472 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-25T21:32:39.508-03:00  INFO 7472 --- [hotel] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T21:32:39.509-03:00  INFO 7472 --- [hotel] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T21:32:39.729-03:00  INFO 7472 --- [hotel] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T21:32:39.731-03:00  INFO 7472 --- [hotel] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7614 ms
+2025-02-25T21:32:40.478-03:00  INFO 7472 --- [hotel] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T21:32:40.802-03:00  INFO 7472 --- [hotel] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T21:32:40.981-03:00  INFO 7472 --- [hotel] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T21:32:41.397-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@5a910bf
+2025-02-25T21:32:41.398-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@5a910bf
+2025-02-25T21:32:41.399-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@5a910bf
+2025-02-25T21:32:41.400-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@14c8d374
+2025-02-25T21:32:41.401-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@14c8d374
+2025-02-25T21:32:41.402-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@a8e1042
+2025-02-25T21:32:41.402-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@a8e1042
+2025-02-25T21:32:41.403-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@4b96a96d
+2025-02-25T21:32:41.404-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@4b96a96d
+2025-02-25T21:32:41.405-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@6777448
+2025-02-25T21:32:41.407-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@6777448
+2025-02-25T21:32:41.408-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@6777448
+2025-02-25T21:32:41.410-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@54765481
+2025-02-25T21:32:41.412-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@54765481
+2025-02-25T21:32:41.413-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@54765481
+2025-02-25T21:32:41.424-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@6dcba049
+2025-02-25T21:32:41.425-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@6dcba049
+2025-02-25T21:32:41.425-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@bff332d
+2025-02-25T21:32:41.426-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@27419a25
+2025-02-25T21:32:41.427-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@27419a25
+2025-02-25T21:32:41.428-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@6df127af
+2025-02-25T21:32:41.428-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@5d880bb0
+2025-02-25T21:32:41.429-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@2f1c2d77
+2025-02-25T21:32:41.430-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@2f1c2d77
+2025-02-25T21:32:41.430-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@2f1c2d77
+2025-02-25T21:32:41.431-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@4a70a03
+2025-02-25T21:32:41.432-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@4a70a03
+2025-02-25T21:32:41.432-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@4a70a03
+2025-02-25T21:32:41.433-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@608f9967
+2025-02-25T21:32:41.434-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@608f9967
+2025-02-25T21:32:41.435-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@608f9967
+2025-02-25T21:32:41.435-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@7dc7db4d
+2025-02-25T21:32:41.436-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@7dc7db4d
+2025-02-25T21:32:41.437-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@7dc7db4d
+2025-02-25T21:32:41.438-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@337e3617
+2025-02-25T21:32:41.439-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@337e3617
+2025-02-25T21:32:41.439-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@337e3617
+2025-02-25T21:32:41.440-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@fb5c569
+2025-02-25T21:32:41.441-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@fb5c569
+2025-02-25T21:32:41.442-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@136d3159
+2025-02-25T21:32:41.444-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@136d3159
+2025-02-25T21:32:41.445-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@50339dca
+2025-02-25T21:32:41.446-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@50339dca
+2025-02-25T21:32:41.446-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@50339dca
+2025-02-25T21:32:41.447-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@12bfd755
+2025-02-25T21:32:41.448-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@3300c6e6
+2025-02-25T21:32:41.449-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@3300c6e6
+2025-02-25T21:32:41.450-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@499dde26
+2025-02-25T21:32:41.451-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@58cc712
+2025-02-25T21:32:41.452-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@58cc712
+2025-02-25T21:32:41.454-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@58cc712
+2025-02-25T21:32:41.455-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@6965ad89
+2025-02-25T21:32:41.456-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@5c6761b5
+2025-02-25T21:32:41.457-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@7bace8f1
+2025-02-25T21:32:41.458-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@18fb14c1
+2025-02-25T21:32:41.459-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@18fb14c1
+2025-02-25T21:32:41.460-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@5cb6fbb2
+2025-02-25T21:32:41.461-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@5cb6fbb2
+2025-02-25T21:32:41.462-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@3bbb5358
+2025-02-25T21:32:41.463-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@27ccdfbe
+2025-02-25T21:32:41.464-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@67518a9a
+2025-02-25T21:32:41.465-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@cd186a9
+2025-02-25T21:32:41.466-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@6d1125f8
+2025-02-25T21:32:41.467-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@2ce136cb
+2025-02-25T21:32:41.468-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@470f7c97
+2025-02-25T21:32:41.469-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@470f7c97
+2025-02-25T21:32:41.470-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@47eb5e11
+2025-02-25T21:32:41.471-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@47eb5e11
+2025-02-25T21:32:41.473-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@23318df1
+2025-02-25T21:32:41.474-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@23318df1
+2025-02-25T21:32:41.475-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@6c3a032
+2025-02-25T21:32:41.476-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@6c3a032
+2025-02-25T21:32:41.476-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@3a148fb9
+2025-02-25T21:32:41.477-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@3a148fb9
+2025-02-25T21:32:41.478-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@2712453c
+2025-02-25T21:32:41.479-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@8631a2a
+2025-02-25T21:32:41.479-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@13bae924
+2025-02-25T21:32:41.480-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@13bae924
+2025-02-25T21:32:41.480-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@d4dc5ad
+2025-02-25T21:32:41.481-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@38c34a9d
+2025-02-25T21:32:41.481-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2861b5e5
+2025-02-25T21:32:41.482-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@6c568a04
+2025-02-25T21:32:41.483-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@6c568a04
+2025-02-25T21:32:41.483-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@fd55a8e
+2025-02-25T21:32:41.484-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2d606e4b
+2025-02-25T21:32:41.485-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@88b389f
+2025-02-25T21:32:41.485-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@88b389f
+2025-02-25T21:32:41.486-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@50d59520
+2025-02-25T21:32:41.486-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@50d59520
+2025-02-25T21:32:41.487-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@7571b49e
+2025-02-25T21:32:41.488-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@7571b49e
+2025-02-25T21:32:41.488-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@7571b49e
+2025-02-25T21:32:41.489-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@5b4d8e4d
+2025-02-25T21:32:41.490-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@5b4d8e4d
+2025-02-25T21:32:41.490-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@5b4d8e4d
+2025-02-25T21:32:41.491-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@a531a7b
+2025-02-25T21:32:41.492-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@76d3e284
+2025-02-25T21:32:41.492-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@e7e7d84
+2025-02-25T21:32:41.493-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@e7e7d84
+2025-02-25T21:32:41.494-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@39f6a5e0
+2025-02-25T21:32:41.494-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@39f6a5e0
+2025-02-25T21:32:41.495-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@39f6a5e0
+2025-02-25T21:32:41.495-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@2b64f067
+2025-02-25T21:32:41.496-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@424ae04d
+2025-02-25T21:32:41.496-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@3f2527dd
+2025-02-25T21:32:41.497-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@3f2527dd
+2025-02-25T21:32:41.497-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@33f04c7c
+2025-02-25T21:32:41.497-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@33f04c7c
+2025-02-25T21:32:41.498-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@33f04c7c
+2025-02-25T21:32:41.499-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@3f9b75ad
+2025-02-25T21:32:41.499-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@3f9b75ad
+2025-02-25T21:32:41.500-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@2ac6b29b
+2025-02-25T21:32:41.501-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@2ac6b29b
+2025-02-25T21:32:41.502-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@3c4b63d1
+2025-02-25T21:32:41.503-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@3c4b63d1
+2025-02-25T21:32:41.504-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@de94b88
+2025-02-25T21:32:41.504-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@de94b88
+2025-02-25T21:32:41.505-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@693b7185
+2025-02-25T21:32:41.506-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@693b7185
+2025-02-25T21:32:41.507-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@76764453
+2025-02-25T21:32:41.507-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@11c4f4a7
+2025-02-25T21:32:41.508-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@56b6581c
+2025-02-25T21:32:41.508-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@64b3bc16
+2025-02-25T21:32:41.509-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@2023280f
+2025-02-25T21:32:41.528-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@2e09b825
+2025-02-25T21:32:41.529-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@2e09b825
+2025-02-25T21:32:41.533-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@42dc0137
+2025-02-25T21:32:41.534-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@50004a12
+2025-02-25T21:32:41.535-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@3a86424d
+2025-02-25T21:32:41.535-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@2445312e
+2025-02-25T21:32:41.536-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@6b24928
+2025-02-25T21:32:41.537-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@54b0d336
+2025-02-25T21:32:41.537-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@5c2c77c7
+2025-02-25T21:32:41.538-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@516de12d
+2025-02-25T21:32:41.538-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@45821921
+2025-02-25T21:32:42.603-03:00  INFO 7472 --- [hotel] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25T21:32:42.779-03:00  INFO 7472 --- [hotel] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T21:32:43.326-03:00  INFO 7472 --- [hotel] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18f4e812
+2025-02-25T21:32:43.340-03:00  INFO 7472 --- [hotel] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T21:32:43.589-03:00  WARN 7472 --- [hotel] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 9.1.2 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2025-02-25T21:32:43.723-03:00  INFO 7472 --- [hotel] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.1.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T21:32:43.751-03:00 DEBUG 7472 --- [hotel] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@1548f4bc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@f3f4354)
+2025-02-25T21:32:43.752-03:00 DEBUG 7472 --- [hotel] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7da0eb05) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@79abdb23)
+2025-02-25T21:32:43.764-03:00 DEBUG 7472 --- [hotel] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-02-25T21:32:43.765-03:00 DEBUG 7472 --- [hotel] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-02-25T21:32:43.809-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@f1bd6bf
+2025-02-25T21:32:43.810-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@f1bd6bf
+2025-02-25T21:32:43.811-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@2e09b825`
+2025-02-25T21:32:43.848-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-02-25T21:32:43.848-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-02-25T21:32:43.849-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-02-25T21:32:43.882-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T21:32:43.883-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T21:32:43.884-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T21:32:43.885-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T21:32:43.885-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T21:32:43.886-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T21:32:43.890-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T21:32:43.891-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T21:32:43.894-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T21:32:43.901-03:00 DEBUG 7472 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6b015056] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4866ea88]
+2025-02-25T21:32:48.300-03:00  INFO 7472 --- [hotel] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T21:32:48.304-03:00 DEBUG 7472 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6b015056] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@3973c0d8]
+2025-02-25T21:32:48.396-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+2025-02-25T21:32:48.401-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists reserva 
+       drop constraint if exists FKg4fko9cjdgw78nr36p9cdw8vo
+2025-02-25T21:32:48.434-03:00  WARN 7472 --- [hotel] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists reserva 
+       drop constraint if exists FKg4fko9cjdgw78nr36p9cdw8vo" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists reserva 
+       drop constraint if exists FKg4fko9cjdgw78nr36p9cdw8vo" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:479) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:245) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:218) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:186) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:156) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:116) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.project.hotel.HotelApplication.main(HotelApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.postgresql.util.PSQLException: ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	... 44 common frames omitted
+
+2025-02-25T21:32:48.459-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists quarto cascade
+2025-02-25T21:32:48.498-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists reserva cascade
+2025-02-25T21:32:48.509-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_quarto
+2025-02-25T21:32:48.519-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_reserva
+2025-02-25T21:32:48.561-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_quarto start with 1 increment by 50
+2025-02-25T21:32:48.599-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_reserva start with 1 increment by 50
+2025-02-25T21:32:48.676-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create table quarto (
+        capacidade_maxima integer not null,
+        id_quarto integer not null,
+        andar varchar(255) not null,
+        bloco varchar(255) not null,
+        quantidade_comodos varchar(255) not null,
+        primary key (id_quarto)
+    )
+2025-02-25T21:32:48.739-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create table reserva (
+        custo_diaria numeric(18,3) not null,
+        data_entrada date,
+        data_saida date,
+        idquarto integer,
+        parcelas integer not null,
+        quantidade_pessoas integer not null,
+        status_pagamento smallint check (status_pagamento between 0 and 2),
+        id_reserva bigint not null,
+        primary key (id_reserva)
+    )
+2025-02-25T21:32:48.768-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists reserva 
+       add constraint FKg4fko9cjdgw78nr36p9cdw8vo 
+       foreign key (idquarto) 
+       references quarto
+2025-02-25T21:32:48.773-03:00  WARN 7472 --- [hotel] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists reserva 
+       add constraint FKg4fko9cjdgw78nr36p9cdw8vo 
+       foreign key (idquarto) 
+       references quarto" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists reserva 
+       add constraint FKg4fko9cjdgw78nr36p9cdw8vo 
+       foreign key (idquarto) 
+       references quarto" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:307) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:253) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:174) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.project.hotel.HotelApplication.main(HotelApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.postgresql.util.PSQLException: ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	... 43 common frames omitted
+
+2025-02-25T21:32:48.803-03:00 TRACE 7472 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@3973c0d8] for TypeConfiguration
+2025-02-25T21:32:48.811-03:00  INFO 7472 --- [hotel] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T21:32:50.265-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_quarto')
+2025-02-25T21:32:50.489-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        quarto
+        (andar, bloco, capacidade_maxima, quantidade_comodos, id_quarto) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-25T21:32:50.533-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_quarto')
+2025-02-25T21:32:50.537-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        quarto
+        (andar, bloco, capacidade_maxima, quantidade_comodos, id_quarto) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-25T21:32:50.543-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        quarto
+        (andar, bloco, capacidade_maxima, quantidade_comodos, id_quarto) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-25T21:32:50.549-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_reserva')
+2025-02-25T21:32:50.559-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (custo_diaria, data_entrada, data_saida, parcelas, quantidade_pessoas, idquarto, status_pagamento, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-02-25T21:32:50.573-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_reserva')
+2025-02-25T21:32:50.577-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (custo_diaria, data_entrada, data_saida, parcelas, quantidade_pessoas, idquarto, status_pagamento, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-02-25T21:32:50.584-03:00 DEBUG 7472 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (custo_diaria, data_entrada, data_saida, parcelas, quantidade_pessoas, idquarto, status_pagamento, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-02-25T21:32:50.870-03:00  WARN 7472 --- [hotel] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T21:32:52.334-03:00  INFO 7472 --- [hotel] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5433/hoteldb'
+2025-02-25T21:32:52.612-03:00  INFO 7472 --- [hotel] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-25T21:32:52.753-03:00  INFO 7472 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-25T21:32:52.788-03:00  INFO 7472 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Started HotelApplication in 23.377 seconds (process running for 25.787)
+2025-02-25T21:34:30.845-03:00  INFO 7472 --- [hotel] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25T21:34:31.404-03:00  INFO 7472 --- [hotel] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-25T21:34:31.415-03:00  INFO 7472 --- [hotel] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T21:34:31.418-03:00 TRACE 7472 --- [hotel] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@3973c0d8] for TypeConfiguration
+2025-02-25T21:34:31.418-03:00 DEBUG 7472 --- [hotel] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@b200125] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@3973c0d8]
+2025-02-25T21:34:31.429-03:00  INFO 7472 --- [hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T21:34:31.454-03:00  INFO 7472 --- [hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T22:02:44.808-03:00  INFO 7824 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Starting HotelApplication using Java 17.0.12 with PID 7824 (C:\Users\josev\OneDrive\Documentos\Informatica\Aulas\JAVA\Spring\hotel\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Informatica\Aulas\JAVA\Spring\hotel)
+2025-02-25T22:02:44.820-03:00  INFO 7824 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : The following 1 profile is active: "dev"
+2025-02-25T22:02:45.265-03:00  INFO 7824 --- [hotel] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25T22:02:45.267-03:00  INFO 7824 --- [hotel] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25T22:02:48.810-03:00  INFO 7824 --- [hotel] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25T22:02:49.094-03:00  INFO 7824 --- [hotel] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 232 ms. Found 2 JPA repository interfaces.
+2025-02-25T22:02:53.603-03:00  INFO 7824 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-25T22:02:53.670-03:00  INFO 7824 --- [hotel] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T22:02:53.672-03:00  INFO 7824 --- [hotel] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T22:02:53.902-03:00  INFO 7824 --- [hotel] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T22:02:53.904-03:00  INFO 7824 --- [hotel] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8615 ms
+2025-02-25T22:02:54.635-03:00  INFO 7824 --- [hotel] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T22:02:54.948-03:00  INFO 7824 --- [hotel] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T22:02:55.143-03:00  INFO 7824 --- [hotel] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T22:02:55.558-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@41e0fc7b
+2025-02-25T22:02:55.561-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@41e0fc7b
+2025-02-25T22:02:55.563-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@41e0fc7b
+2025-02-25T22:02:55.566-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@211f3887
+2025-02-25T22:02:55.568-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@211f3887
+2025-02-25T22:02:55.573-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@201d3283
+2025-02-25T22:02:55.575-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@201d3283
+2025-02-25T22:02:55.577-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@283f9fcf
+2025-02-25T22:02:55.579-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@283f9fcf
+2025-02-25T22:02:55.580-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@6efabd97
+2025-02-25T22:02:55.581-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@6efabd97
+2025-02-25T22:02:55.582-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@6efabd97
+2025-02-25T22:02:55.584-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@36797bcf
+2025-02-25T22:02:55.585-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@36797bcf
+2025-02-25T22:02:55.586-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@36797bcf
+2025-02-25T22:02:55.587-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@1001e191
+2025-02-25T22:02:55.587-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@1001e191
+2025-02-25T22:02:55.588-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@6ddb575d
+2025-02-25T22:02:55.589-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@5c2680c9
+2025-02-25T22:02:55.589-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@5c2680c9
+2025-02-25T22:02:55.590-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@10fd4bfc
+2025-02-25T22:02:55.591-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@f6f3d1b
+2025-02-25T22:02:55.591-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@3839e214
+2025-02-25T22:02:55.592-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@3839e214
+2025-02-25T22:02:55.593-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@3839e214
+2025-02-25T22:02:55.593-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@50710d12
+2025-02-25T22:02:55.594-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@50710d12
+2025-02-25T22:02:55.595-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@50710d12
+2025-02-25T22:02:55.596-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@2aa90e4b
+2025-02-25T22:02:55.597-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@2aa90e4b
+2025-02-25T22:02:55.597-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@2aa90e4b
+2025-02-25T22:02:55.598-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@5c5869e0
+2025-02-25T22:02:55.599-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@5c5869e0
+2025-02-25T22:02:55.599-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@5c5869e0
+2025-02-25T22:02:55.600-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@2b86093d
+2025-02-25T22:02:55.601-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@2b86093d
+2025-02-25T22:02:55.602-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@2b86093d
+2025-02-25T22:02:55.603-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@734798c2
+2025-02-25T22:02:55.609-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@734798c2
+2025-02-25T22:02:55.610-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@11fe1bb7
+2025-02-25T22:02:55.611-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@11fe1bb7
+2025-02-25T22:02:55.612-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@e766701
+2025-02-25T22:02:55.612-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@e766701
+2025-02-25T22:02:55.613-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@e766701
+2025-02-25T22:02:55.613-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@15225813
+2025-02-25T22:02:55.614-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@5aec53fd
+2025-02-25T22:02:55.615-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@5aec53fd
+2025-02-25T22:02:55.616-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@3b2ed8b4
+2025-02-25T22:02:55.618-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@65deebf
+2025-02-25T22:02:55.618-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@65deebf
+2025-02-25T22:02:55.620-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@65deebf
+2025-02-25T22:02:55.621-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1b8dca7
+2025-02-25T22:02:55.623-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@39f304d6
+2025-02-25T22:02:55.624-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@74d58024
+2025-02-25T22:02:55.625-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@1d94b017
+2025-02-25T22:02:55.626-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@1d94b017
+2025-02-25T22:02:55.628-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@5a8e0ae6
+2025-02-25T22:02:55.628-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@5a8e0ae6
+2025-02-25T22:02:55.629-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@7b7a60d5
+2025-02-25T22:02:55.630-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@23761b3e
+2025-02-25T22:02:55.632-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@1bda134f
+2025-02-25T22:02:55.633-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@3129f3e8
+2025-02-25T22:02:55.634-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@19fd41d0
+2025-02-25T22:02:55.635-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@a41163a
+2025-02-25T22:02:55.636-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@41ca2c56
+2025-02-25T22:02:55.638-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@41ca2c56
+2025-02-25T22:02:55.639-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@3f022134
+2025-02-25T22:02:55.640-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@3f022134
+2025-02-25T22:02:55.641-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@4c8214c5
+2025-02-25T22:02:55.642-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@4c8214c5
+2025-02-25T22:02:55.644-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@4ef02ba9
+2025-02-25T22:02:55.645-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@4ef02ba9
+2025-02-25T22:02:55.647-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@5e4806bd
+2025-02-25T22:02:55.648-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@5e4806bd
+2025-02-25T22:02:55.649-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@706d97c1
+2025-02-25T22:02:55.650-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2c159135
+2025-02-25T22:02:55.651-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@63f74a7d
+2025-02-25T22:02:55.652-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@63f74a7d
+2025-02-25T22:02:55.652-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@7d14c550
+2025-02-25T22:02:55.653-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@615b86ac
+2025-02-25T22:02:55.654-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@61c73f8b
+2025-02-25T22:02:55.655-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@383a256c
+2025-02-25T22:02:55.656-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@383a256c
+2025-02-25T22:02:55.657-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@63df497e
+2025-02-25T22:02:55.659-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@5e8ccd4f
+2025-02-25T22:02:55.660-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@66f9a72
+2025-02-25T22:02:55.661-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@66f9a72
+2025-02-25T22:02:55.662-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@6f17de96
+2025-02-25T22:02:55.663-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@6f17de96
+2025-02-25T22:02:55.664-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@761aeeb3
+2025-02-25T22:02:55.665-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@761aeeb3
+2025-02-25T22:02:55.666-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@761aeeb3
+2025-02-25T22:02:55.667-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@4ec4b38a
+2025-02-25T22:02:55.668-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@4ec4b38a
+2025-02-25T22:02:55.669-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@4ec4b38a
+2025-02-25T22:02:55.670-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@34820c2a
+2025-02-25T22:02:55.671-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@65309742
+2025-02-25T22:02:55.672-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@44fe9221
+2025-02-25T22:02:55.672-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@44fe9221
+2025-02-25T22:02:55.673-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@2fcd21d7
+2025-02-25T22:02:55.673-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@2fcd21d7
+2025-02-25T22:02:55.674-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@2fcd21d7
+2025-02-25T22:02:55.675-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@b8a9b58
+2025-02-25T22:02:55.676-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@6a6187ec
+2025-02-25T22:02:55.677-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@5abe6f1b
+2025-02-25T22:02:55.677-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@5abe6f1b
+2025-02-25T22:02:55.678-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@1c3b3e02
+2025-02-25T22:02:55.678-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@1c3b3e02
+2025-02-25T22:02:55.679-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@1c3b3e02
+2025-02-25T22:02:55.680-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@43b43686
+2025-02-25T22:02:55.682-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@43b43686
+2025-02-25T22:02:55.683-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@250c97fb
+2025-02-25T22:02:55.684-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@250c97fb
+2025-02-25T22:02:55.685-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@c63e2f6
+2025-02-25T22:02:55.686-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@c63e2f6
+2025-02-25T22:02:55.687-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@496d1656
+2025-02-25T22:02:55.694-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@496d1656
+2025-02-25T22:02:55.696-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@2b0f19fb
+2025-02-25T22:02:55.696-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@2b0f19fb
+2025-02-25T22:02:55.697-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@6afde02e
+2025-02-25T22:02:55.698-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@791acbd5
+2025-02-25T22:02:55.699-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@58e4ad06
+2025-02-25T22:02:55.700-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@b77b720
+2025-02-25T22:02:55.701-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@e0ecaf0
+2025-02-25T22:02:55.728-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@3f63922e
+2025-02-25T22:02:55.729-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@3f63922e
+2025-02-25T22:02:55.733-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@7454c857
+2025-02-25T22:02:55.734-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@43954e18
+2025-02-25T22:02:55.735-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@43329c35
+2025-02-25T22:02:55.735-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@49cf17dd
+2025-02-25T22:02:55.736-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@1b8b68c3
+2025-02-25T22:02:55.736-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@72871024
+2025-02-25T22:02:55.737-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@2503f975
+2025-02-25T22:02:55.737-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@14c373f7
+2025-02-25T22:02:55.738-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@54cedcdc
+2025-02-25T22:02:56.782-03:00  INFO 7824 --- [hotel] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25T22:02:56.957-03:00  INFO 7824 --- [hotel] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T22:02:57.763-03:00  INFO 7824 --- [hotel] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3861d14f
+2025-02-25T22:02:57.770-03:00  INFO 7824 --- [hotel] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T22:02:58.034-03:00  WARN 7824 --- [hotel] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 9.1.2 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2025-02-25T22:02:58.175-03:00  INFO 7824 --- [hotel] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.1.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T22:02:58.210-03:00 DEBUG 7824 --- [hotel] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6cdff7c3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@62f66c3c)
+2025-02-25T22:02:58.211-03:00 DEBUG 7824 --- [hotel] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60cec074) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@483c0f75)
+2025-02-25T22:02:58.222-03:00 DEBUG 7824 --- [hotel] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-02-25T22:02:58.223-03:00 DEBUG 7824 --- [hotel] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-02-25T22:02:58.280-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@5948bdc
+2025-02-25T22:02:58.282-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@5948bdc
+2025-02-25T22:02:58.283-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@3f63922e`
+2025-02-25T22:02:58.329-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-02-25T22:02:58.334-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-02-25T22:02:58.336-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-02-25T22:02:58.364-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T22:02:58.365-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T22:02:58.366-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-25T22:02:58.383-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T22:02:58.384-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T22:02:58.385-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-25T22:02:58.388-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T22:02:58.389-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T22:02:58.390-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-25T22:02:58.397-03:00 DEBUG 7824 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@53b0185c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@644f3caa]
+2025-02-25T22:03:03.069-03:00  INFO 7824 --- [hotel] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T22:03:03.071-03:00 DEBUG 7824 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@53b0185c] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@5a068327]
+2025-02-25T22:03:03.151-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+2025-02-25T22:03:03.155-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists reserva 
+       drop constraint if exists FKg4fko9cjdgw78nr36p9cdw8vo
+2025-02-25T22:03:03.185-03:00  WARN 7824 --- [hotel] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists reserva 
+       drop constraint if exists FKg4fko9cjdgw78nr36p9cdw8vo" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists reserva 
+       drop constraint if exists FKg4fko9cjdgw78nr36p9cdw8vo" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:479) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:245) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:218) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:186) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:156) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:116) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:238) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.project.hotel.HotelApplication.main(HotelApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.postgresql.util.PSQLException: ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	... 44 common frames omitted
+
+2025-02-25T22:03:03.207-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists quarto cascade
+2025-02-25T22:03:03.254-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists reserva cascade
+2025-02-25T22:03:03.269-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_quarto
+2025-02-25T22:03:03.277-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_reserva
+2025-02-25T22:03:03.334-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_quarto start with 1 increment by 50
+2025-02-25T22:03:03.373-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_reserva start with 1 increment by 50
+2025-02-25T22:03:03.414-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create table quarto (
+        capacidade_maxima integer not null,
+        id_quarto integer not null,
+        andar varchar(255) not null,
+        bloco varchar(255) not null,
+        quantidade_comodos varchar(255) not null,
+        primary key (id_quarto)
+    )
+2025-02-25T22:03:03.472-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    create table reserva (
+        custo_diaria numeric(18,3) not null,
+        data_entrada date,
+        data_saida date,
+        idquarto integer,
+        parcelas integer not null,
+        quantidade_pessoas integer not null,
+        status_pagamento smallint check (status_pagamento between 0 and 2),
+        id_reserva bigint not null,
+        primary key (id_reserva)
+    )
+2025-02-25T22:03:03.520-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists reserva 
+       add constraint FKg4fko9cjdgw78nr36p9cdw8vo 
+       foreign key (idquarto) 
+       references quarto
+2025-02-25T22:03:03.528-03:00  WARN 7824 --- [hotel] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists reserva 
+       add constraint FKg4fko9cjdgw78nr36p9cdw8vo 
+       foreign key (idquarto) 
+       references quarto" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists reserva 
+       add constraint FKg4fko9cjdgw78nr36p9cdw8vo 
+       foreign key (idquarto) 
+       references quarto" via JDBC [ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:307) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:253) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:174) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.project.hotel.HotelApplication.main(HotelApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.postgresql.util.PSQLException: ERRO: erro de sintaxe em ou próximo a "exists"
+  Posição: 22
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	... 43 common frames omitted
+
+2025-02-25T22:03:03.564-03:00 TRACE 7824 --- [hotel] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@5a068327] for TypeConfiguration
+2025-02-25T22:03:03.567-03:00  INFO 7824 --- [hotel] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T22:03:04.909-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_quarto')
+2025-02-25T22:03:05.233-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        quarto
+        (andar, bloco, capacidade_maxima, quantidade_comodos, id_quarto) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-25T22:03:05.280-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_quarto')
+2025-02-25T22:03:05.285-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        quarto
+        (andar, bloco, capacidade_maxima, quantidade_comodos, id_quarto) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-25T22:03:05.292-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        quarto
+        (andar, bloco, capacidade_maxima, quantidade_comodos, id_quarto) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-25T22:03:05.298-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_reserva')
+2025-02-25T22:03:05.309-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (custo_diaria, data_entrada, data_saida, parcelas, quantidade_pessoas, idquarto, status_pagamento, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-02-25T22:03:05.330-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_reserva')
+2025-02-25T22:03:05.334-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (custo_diaria, data_entrada, data_saida, parcelas, quantidade_pessoas, idquarto, status_pagamento, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-02-25T22:03:05.341-03:00 DEBUG 7824 --- [hotel] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (custo_diaria, data_entrada, data_saida, parcelas, quantidade_pessoas, idquarto, status_pagamento, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-02-25T22:03:05.661-03:00  WARN 7824 --- [hotel] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T22:03:06.908-03:00  INFO 7824 --- [hotel] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5433/hoteldb'
+2025-02-25T22:03:07.236-03:00  INFO 7824 --- [hotel] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-25T22:03:07.398-03:00  INFO 7824 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-25T22:03:07.433-03:00  INFO 7824 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Started HotelApplication in 25.279 seconds (process running for 28.193)
+2025-02-25T22:03:22.666-03:00  INFO 7824 --- [hotel] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T22:03:22.667-03:00  INFO 7824 --- [hotel] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-25T22:03:22.672-03:00  INFO 7824 --- [hotel] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-02-25T22:03:23.523-03:00 DEBUG 7824 --- [hotel] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        q1_0.id_quarto,
+        q1_0.andar,
+        q1_0.bloco,
+        q1_0.capacidade_maxima,
+        q1_0.quantidade_comodos 
+    from
+        quarto q1_0
+2025-02-25T22:03:33.705-03:00 DEBUG 7824 --- [hotel] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.custo_diaria,
+        r1_0.data_entrada,
+        r1_0.data_saida,
+        r1_0.parcelas,
+        r1_0.quantidade_pessoas,
+        r1_0.idquarto,
+        r1_0.status_pagamento 
+    from
+        reserva r1_0
+2025-02-25T22:03:33.749-03:00 DEBUG 7824 --- [hotel] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        q1_0.id_quarto,
+        q1_0.andar,
+        q1_0.bloco,
+        q1_0.capacidade_maxima,
+        q1_0.quantidade_comodos 
+    from
+        quarto q1_0 
+    where
+        q1_0.id_quarto=?
+2025-02-25T22:03:33.758-03:00 DEBUG 7824 --- [hotel] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        q1_0.id_quarto,
+        q1_0.andar,
+        q1_0.bloco,
+        q1_0.capacidade_maxima,
+        q1_0.quantidade_comodos 
+    from
+        quarto q1_0 
+    where
+        q1_0.id_quarto=?
+2025-02-25T22:03:33.763-03:00 DEBUG 7824 --- [hotel] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        q1_0.id_quarto,
+        q1_0.andar,
+        q1_0.bloco,
+        q1_0.capacidade_maxima,
+        q1_0.quantidade_comodos 
+    from
+        quarto q1_0 
+    where
+        q1_0.id_quarto=?

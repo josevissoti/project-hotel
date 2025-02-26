@@ -21,6 +21,7 @@ public class Reserva {
     @NotNull
     private int quantidadePessoas;
 
+    @NotNull
     @Digits(integer = 15, fraction = 3)
     private BigDecimal custoDiaria;
 
@@ -33,6 +34,10 @@ public class Reserva {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataSaida;
 
+    @ManyToOne
+    @JoinColumn(name = "idquarto")
+    private Quarto quarto;
+
     @Enumerated(EnumType.ORDINAL)
     @JoinColumn(name = "statusPagamento")
     private StatusPagamento statusPagamento;
@@ -41,13 +46,14 @@ public class Reserva {
         this.statusPagamento = StatusPagamento.PAGANDO;
     }
 
-    public Reserva(Long idReserva, int quantidadePessoas, BigDecimal custoDiaria, int parcelas, LocalDate dataEntrada, LocalDate dataSaida, StatusPagamento statusPagamento) {
+    public Reserva(Long idReserva, int quantidadePessoas, BigDecimal custoDiaria, int parcelas, LocalDate dataEntrada, LocalDate dataSaida, Quarto quarto, StatusPagamento statusPagamento) {
         this.idReserva = idReserva;
         this.quantidadePessoas = quantidadePessoas;
         this.custoDiaria = custoDiaria;
         this.parcelas = parcelas;
         this.dataEntrada = dataEntrada;
         this.dataSaida = dataSaida;
+        this.quarto = quarto;
         this.statusPagamento = statusPagamento;
     }
 
@@ -97,6 +103,14 @@ public class Reserva {
 
     public void setDataSaida(LocalDate dataSaida) {
         this.dataSaida = dataSaida;
+    }
+
+    public Quarto getQuarto() {
+        return quarto;
+    }
+
+    public void setQuarto(Quarto quarto) {
+        this.quarto = quarto;
     }
 
     public StatusPagamento getStatusPagamento() {

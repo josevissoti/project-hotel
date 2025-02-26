@@ -634,3 +634,19 @@
 2025-02-25T20:47:24.970-03:00  INFO 7256 --- [hotel] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-02-25T20:47:25.117-03:00  INFO 7256 --- [hotel] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-02-25T20:47:25.151-03:00  INFO 7256 --- [hotel] [restartedMain] com.project.hotel.HotelApplication       : Started HotelApplication in 28.012 seconds (process running for 30.887)
+2025-02-25T20:50:29.190-03:00  INFO 7256 --- [hotel] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-25T20:50:30.101-03:00  INFO 7256 --- [hotel] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-25T20:50:30.141-03:00  INFO 7256 --- [hotel] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T20:50:30.183-03:00 DEBUG 7256 --- [hotel] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists quarto cascade 
+2025-02-25T20:50:30.244-03:00 DEBUG 7256 --- [hotel] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists reserva cascade 
+2025-02-25T20:50:30.259-03:00 DEBUG 7256 --- [hotel] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_quarto
+2025-02-25T20:50:30.262-03:00 DEBUG 7256 --- [hotel] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_reserva
+2025-02-25T20:50:30.284-03:00 TRACE 7256 --- [hotel] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@405da99d] for TypeConfiguration
+2025-02-25T20:50:30.285-03:00 DEBUG 7256 --- [hotel] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@2d047d59] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@405da99d]
+2025-02-25T20:50:30.326-03:00  WARN 7256 --- [hotel] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-02-25T20:50:30.332-03:00  INFO 7256 --- [hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T20:50:30.347-03:00  INFO 7256 --- [hotel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

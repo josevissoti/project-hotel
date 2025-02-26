@@ -1,43 +1,36 @@
-package com.project.domains;
+package com.project.domains.dtos;
 
-import jakarta.persistence.*;
+import com.project.domains.Quarto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-import java.util.Objects;
+public class QuartoDTO {
 
-@Entity
-@Table(name = "quarto")
-public class Quarto {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "seq_quarto")
     private Integer idQuarto;
 
-    @NotNull
     private int capacidadeMaxima;
 
-    @NotNull
-    @NotBlank
+    @NotNull(message = "O campo andar não pode ser nulo")
+    @NotBlank(message = "O campo andar não pode estar vazio")
     private String andar;
 
-    @NotNull
-    @NotBlank
+    @NotNull(message = "O campo bloco não pode ser nulo")
+    @NotBlank(message = "O campo bloco não pode estar vazio")
     private String bloco;
 
-    @NotNull
-    @NotBlank
+    @NotNull(message = "O campo quantidadeComodos não pode ser nulo")
+    @NotBlank(message = "O campo quantidadeComodos não pode estar vazio")
     private String quantidadeComodos;
 
-    public Quarto() {
+    public QuartoDTO() {
     }
 
-    public Quarto(Integer idQuarto, int capacidadeMaxima, String andar, String bloco, String quantidadeComodos) {
-        this.idQuarto = idQuarto;
-        this.capacidadeMaxima = capacidadeMaxima;
-        this.andar = andar;
-        this.bloco = bloco;
-        this.quantidadeComodos = quantidadeComodos;
+    public QuartoDTO(Quarto quarto) {
+        this.idQuarto = quarto.getIdQuarto();
+        this.capacidadeMaxima = quarto.getCapacidadeMaxima();
+        this.andar = quarto.getAndar();
+        this.bloco = quarto.getBloco();
+        this.quantidadeComodos = quarto.getQuantidadeComodos();
     }
 
     public Integer getIdQuarto() {
@@ -78,17 +71,5 @@ public class Quarto {
 
     public void setQuantidadeComodos(String quantidadeComodos) {
         this.quantidadeComodos = quantidadeComodos;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Quarto quarto = (Quarto) o;
-        return Objects.equals(idQuarto, quarto.idQuarto);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(idQuarto);
     }
 }
