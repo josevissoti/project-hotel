@@ -30,7 +30,7 @@ public enum StatusPagamento {
     public static StatusPagamento toEnum(Integer id){
         if(id==null) return null;
         for(StatusPagamento statusPagamento : StatusPagamento.values()){
-            if(id.equals(statusPagamento.getStatus())){
+            if(id.equals(statusPagamento.getId())){
                 return statusPagamento;
             }
         }

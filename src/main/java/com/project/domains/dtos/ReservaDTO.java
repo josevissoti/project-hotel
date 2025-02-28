@@ -15,6 +15,10 @@ public class ReservaDTO {
 
     private Long idReserva;
 
+    @NotNull(message = "O campo codigoBarras não pode ser nulo")
+    @NotBlank(message = "O campo codigoBarras não pode ser vazio")
+    private String codigoBarras;
+
     @NotNull(message = "O campo quantidadePessoas não pode ser nulo")
     private int quantidadePessoas;
 
@@ -25,9 +29,11 @@ public class ReservaDTO {
     @NotNull(message = "O campo parcelas não pode ser nulo")
     private int parcelas;
 
+    @NotNull(message = "O campo dataEntrada não pode ser nulo")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataEntrada;
 
+    @NotNull(message = "O campo dataSaida não pode ser nulo")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataSaida;
 
@@ -45,6 +51,7 @@ public class ReservaDTO {
 
     public ReservaDTO(Reserva reserva) {
         this.idReserva = reserva.getIdReserva();
+        this.codigoBarras = reserva.getCodigoBarras();
         this.quantidadePessoas = reserva.getQuantidadePessoas();
         this.curtoDiaria = reserva.getCustoDiaria();
         this.parcelas = reserva.getParcelas();
@@ -64,6 +71,14 @@ public class ReservaDTO {
 
     public void setIdReserva(Long idReserva) {
         this.idReserva = idReserva;
+    }
+
+    public String getCodigoBarras() {
+        return codigoBarras;
+    }
+
+    public void setCodigoBarras(String codigoBarras) {
+        this.codigoBarras = codigoBarras;
     }
 
     public int getQuantidadePessoas() {

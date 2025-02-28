@@ -1,9 +1,13 @@
 package com.project.domains;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.project.domains.dtos.QuartoDTO;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -11,7 +15,7 @@ import java.util.Objects;
 public class Quarto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "seq_quarto")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_quarto")
     private Integer idQuarto;
 
     @NotNull
@@ -29,6 +33,10 @@ public class Quarto {
     @NotBlank
     private String quantidadeComodos;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "quarto")
+    private List<Reserva> reservas = new ArrayList<>();
+
     public Quarto() {
     }
 
@@ -38,6 +46,14 @@ public class Quarto {
         this.andar = andar;
         this.bloco = bloco;
         this.quantidadeComodos = quantidadeComodos;
+    }
+
+    public Quarto(QuartoDTO dto) {
+        this.idQuarto = dto.getIdQuarto();
+        this.capacidadeMaxima = dto.getCapacidadeMaxima();
+        this.andar = dto.getAndar();
+        this.bloco = dto.getBloco();
+        this.quantidadeComodos = dto.getQuantidadeComodos();
     }
 
     public Integer getIdQuarto() {
@@ -78,6 +94,14 @@ public class Quarto {
 
     public void setQuantidadeComodos(String quantidadeComodos) {
         this.quantidadeComodos = quantidadeComodos;
+    }
+
+    public List<Reserva> getReservas() {
+        return reservas;
+    }
+
+    public void setReservas(List<Reserva> reservas) {
+        this.reservas = reservas;
     }
 
     @Override
